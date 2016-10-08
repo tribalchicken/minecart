@@ -511,5 +511,5 @@ class StubColorSpaceFamily(ColorSpaceFamily):
         # colorspace
         return ColorSpace(self, self.ncomponents, (0,) * self.ncomponents)
 
-for name, ncomps in [('Pattern', 1), ('Separation', 1)]:
+for name, ncomps in [('Pattern', 1), ('Separation', 1), ('ICCBased', 1)]:
     FAMILIES[name] = StubColorSpaceFamily(name, ncomps)
